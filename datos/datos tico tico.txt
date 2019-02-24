@@ -1,0 +1,7 @@
+base de datos: edgardro_elticotico
+user: edgardo_eltico
+pass: elticotico2013
+
+WordPress
+User: elticotico
+Pass: elticotico2013
