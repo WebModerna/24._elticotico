@@ -1,12 +1,24 @@
-<?php get_header(); ?>
-		
-	<?php get_template_part('includes/featured'); ?>
-	<div id="content-top">	
-		<div id="content" class="clearfix">
-			<div id="main-area">
-				<?php get_template_part('includes/entry'); ?>
-			</div> <!-- end #main-area-->	
-			
-			<?php get_sidebar(); ?>
-			
-		<?php get_footer(); ?>		
+<?php
+/**
+* home.php
+* @package WordPress
+* @subpackage elticotico
+* @since elticotico 3.0
+* Text Domain: elticotico
+*/
+
+get_header();?>
+
+	<!--Aquí va el SlideShow con las fotos y el video en vivo-->     
+	<section class="pics">
+
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php the_content();?>
+	
+		<?php endwhile; ?>
+
+		<?php endif; ?>
+
+	</section>
+
+<?php get_footer(); ?>

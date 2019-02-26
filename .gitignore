@@ -22,3 +22,10 @@ wp-*.php
 wp-admin
 wp-includes
 xml*.php
+wp-content/themes/desarrollos/style.php
+wp-content/themes/desarrollos/scripts.php
+# wp-content/themes/desarrollos/*.txt
+wp-content/themes/desarrollos/*.sql
+wp-content/themes/desarrollos/*.html
+wp-content/themes/desarrollos/single.php
+wp-content/themes/desarrollos/page.php
