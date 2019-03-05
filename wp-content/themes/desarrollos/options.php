@@ -63,6 +63,16 @@ function optionsframework_options()
 	'id'	=>	'background_de_la_web',
 	'type'	=>	'upload');
 
+	// Reflexor
+	$options[] = array(
+	'name' => __( 'Reflejar', 'elticotico' ),
+	'desc' => __( 'Dar vuelta horizontalmente todo el contenido para usar en una pantala proyectora.', 'elticotico' ),
+	'id' => 'example_checkbox',
+	'std' => '1',
+	'type' => 'checkbox'
+	);
+
+
 	// Titular del Portfolio de la home
 	$options[]	=	array(
 		'name'			=>	__('Titular del Portfolio de la home', 'options_framework_theme'),

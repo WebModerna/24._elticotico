@@ -8,6 +8,9 @@ require_once "includes/03._el_slider.php";
 // url relativas
 require_once "includes/14._url_relativas.php";
 
+// Regenerador de imágenes
+require_once "includes/04._regenerate-thumbnails.php";
+
 // Cargar Panel de Opciones
 if ( !function_exists( 'optionsframework_init' ) )
 {
@@ -43,6 +46,7 @@ if ( function_exists( 'add_theme_support' ) )
 	add_image_size( 'video-thumbnail', 66, 56, true ); // Videos list thumbnails
 	add_image_size( 'index-thumbnail', 170, 160, true ); // Blog thumbnail
 	add_image_size( 'slider-thumbnail', 400, 190, true ); // Slider thumbnail
+	add_image_size( 'slider-foto', 1300, 890, true ); // Slider
 }
 
 // Remover versión del WordPress

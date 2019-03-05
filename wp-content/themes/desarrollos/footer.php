@@ -11,7 +11,7 @@
 		</article>
 
 		<!--Footer-->
-		<footer>
+		<footer class="footer">
 			<div>
 				<p class="copyright">
 				Copyright &copy;<?php the_time('Y');?> <?php bloginfo('name');?>
@@ -22,6 +22,7 @@
 			</div>
 		</footer>
 	</div><!-- fin del wrapper -->
+</div>
 
 		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/js/jQueryCyclePlugin.js"></script>

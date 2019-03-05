@@ -1,5 +1,10 @@
 // Estilos para normalizar todo
+
 @import "normalize"
+*
+	box-sizing border-box
+
+$ancho_maximo = 650px;
 
 // Generales de la web
 body
@@ -9,21 +14,45 @@ body
 	margin 0 auto
 	text-align center
 
+a
+	text-decoration none
+
+	&:hover
+	&:visited
+	&:active 
+		color #CB583E
+		text-decoration underline
+		text-shadow 0px 0px 5px #000
+
+.contenedor
+	background rgba(0,0,0,0.5)
+	height 100vh
+
 .wrapper
+	position relative
+	overflow hidden
 	margin 0 auto
-	overflow hidden 
+	max-width $ancho_maximo
 	position relative
 	text-align center
 
+.footer
+	color #eee
+
 // Logotipo
 .logotipo
-	background rgba(255,255,255,0.5)
-	box-shadow 0px 5px 20px 5px #000
-	max-width 250px
-	// position absolute
-	// width 100%
-	z-index 99
 	margin 0 auto
+	top 13px
+	position absolute
+	text-align center
+	width 100%
+	z-index 99
+
+.la_imagen
+	background rgba(255,255,255,0.75)
+	box-shadow 0px 15px 20px 5px #000
+	margin 0 auto
+	max-width 200px
 	
 	img
 		max-height 80px
@@ -31,28 +60,41 @@ body
 
 // los slides
 .slides
-	background rgba(0,0,0,0.97) url("images/apple.jpg") no-repeat center center
-	border-radius 5px 
-	border 12px solid white
-	box-shadow 0px 5px 25px 12px #000
+.slider__item
+	background rgba(0,0,0,0.97) url("images/bj3.jpg") no-repeat center center
+	border-radius 8px 
+	border 8px solid white
+	// box-shadow 0px 5px 25px 12px #000
 	box-sizing border-box
-	display inline-block 
+	display block
 	margin 5px auto 3em auto
-	max-width 650px
-	max-height 540px
+	max-width $ancho_maximo
+	// max-height 540px
 	overflow hidden
 	padding 0
+	width 100%
 	z-index 98
+
+.slider__item
+	figure
+		img
+			width 100%
+	iframe
+		height 100%
+		width 100%
 
 
 // las leyendas de las fotos
 .wp-caption-text
-	background rgba(0,0,0,0.6)
-	color #fff
-	margin-right auto
-	margin-left auto
-	max-width 320px
-	padding 1em
+	background rgba(255,255,255,0.75)
+	// color #fff
+	padding 16px
 	position absolute
-	text-align left 
-	top 470px
+	bottom -2 px
+	width 100%
+
+.wp-caption
+	width 100% !important
+	img
+		width 100%
+		height auto

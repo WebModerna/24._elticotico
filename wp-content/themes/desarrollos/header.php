@@ -10,6 +10,8 @@
 // Variables importantes
 $background_de_la_web  = of_get_option('background_de_la_web', '');
 $logo_uploader = of_get_option('logo_uploader', '');
+$example_colorpicker = of_get_option('example_colorpicker', '');
+$reflexor = of_get_option('example_checkbox', '');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
@@ -24,19 +26,53 @@ $logo_uploader = of_get_option('logo_uploader', '');
 	<style type="text/css">
 		body
 		{
-			background-color: #456;
-			<?php if ( $background_de_la_web ) { ?>
-			background-image: url("<?php echo $background_de_la_web;?>");
-			<?php };?>
+			<?php
+			// 	El color de fondo
+			echo 'background-color: ';
+			if ( $example_colorpicker )
+			{
+				echo $example_colorpicker;
+			}
+			else
+			{
+				echo  '#786578';
+			}
+			echo ';';
+			echo 'background-image: url("';
+
+			
+			// La imagen de fondo
+			if ( $background_de_la_web )
+			{
+				echo $background_de_la_web;
+			}
+			else
+			{
+				bloginfo('stylesheet_directory');
+				echo '/images/bg2.jpg';
+			};
+			echo '");';
+			?>
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			background-size: cover;
+		}
+		.contenedor
+		{
+			<?php if ( $reflexor == 1 ) { ?>
+			-moz-transform: scaleX(-1);
+			-o-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+			filter: FlipH;
+			<?php };?>
 		}
 	</style>
 	<?php wp_head();?>
 </head>
 
 <body <?php body_class();?>>
+	<div class="contenedor">
 	<div class="wrapper">
 	<noscript>
 		<p>Necesitás si o si tener activado JavaScript en tu navedador</p>
@@ -46,6 +82,7 @@ $logo_uploader = of_get_option('logo_uploader', '');
 
 		<!--Aquí va el logo-->
 		<div class="borde logotipo">
+			<div class="la_imagen">
 			<?php if( $logo_uploader ) { ?>
 
 			<img src="<?php echo $logo_uploader; ?>" alt="Tico Tico" />
@@ -55,4 +92,5 @@ $logo_uploader = of_get_option('logo_uploader', '');
 			<img src="<?php bloginfo('stylesheet_directory');?>/images/logotipo.png" alt="Tico Tico" />
 
 			<?php };?>
+			</div>
 		</div>

@@ -142,6 +142,9 @@ template {
 [hidden] {
   display: none;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   color: #5a3928;
   font-family: Tahoma, Verdana, Arial, Sans-Serif;
@@ -149,46 +152,82 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
+a:hover,
+a:visited,
+a:active {
+  color: #cb583e;
+  text-decoration: underline;
+  text-shadow: 0px 0px 5px #000;
+}
+.contenedor {
+  background: rgba(0,0,0,0.5);
+  height: 100vh;
+}
 .wrapper {
-  margin: 0 auto;
+  position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 650px;
   position: relative;
   text-align: center;
 }
-.logotipo {
-  background: rgba(255,255,255,0.5);
-  box-shadow: 0px 5px 20px 5px #000;
-  max-width: 250px;
-  z-index: 99;
-  margin: 0 auto;
+.footer {
+  color: #eee;
 }
-.logotipo img {
+.logotipo {
+  margin: 0 auto;
+  top: 13px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+}
+.la_imagen {
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0px 15px 20px 5px #000;
+  margin: 0 auto;
+  max-width: 200px;
+}
+.la_imagen img {
   max-height: 80px;
   width: 100%;
 }
-.slides {
-  background: rgba(0,0,0,0.97) url("images/apple.jpg") no-repeat center center;
-  border-radius: 5px;
-  border: 12px solid #fff;
-  box-shadow: 0px 5px 25px 12px #000;
+.slides,
+.slider__item {
+  background: rgba(0,0,0,0.97) url("images/bj3.jpg") no-repeat center center;
+  border-radius: 8px;
+  border: 8px solid #fff;
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   margin: 5px auto 3em auto;
   max-width: 650px;
-  max-height: 540px;
   overflow: hidden;
   padding: 0;
+  width: 100%;
   z-index: 98;
 }
+.slider__item figure img {
+  width: 100%;
+}
+.slider__item iframe {
+  height: 100%;
+  width: 100%;
+}
 .wp-caption-text {
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 320px;
-  padding: 1em;
+  background: rgba(255,255,255,0.75);
+  padding: 16px;
   position: absolute;
-  text-align: left;
-  top: 470px;
+  bottom: -2px;
+  width: 100%;
+}
+.wp-caption {
+  width: 100% !important;
+}
+.wp-caption img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=index.css.map */
