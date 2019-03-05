@@ -32,7 +32,7 @@ function optionsframework_options()
 {
 	//Pestaña Configuración general
 	$options[]	=	array(
-	'name'	=>	__('Configuración General', 'options_framework_theme'),
+	'name'	=>	__('Logotipo', 'options_framework_theme'),
 	'type'	=>	'heading');
 
 	// Cambio del logo
@@ -42,7 +42,21 @@ function optionsframework_options()
 	'id'	=>	'logo_uploader',
 	'type'	=>	'upload');
 
-	// Cambiar el background
+	$options[] = array(
+		'name' => __( 'Configuración General', 'theme-textdomain' ),
+		'type' => 'heading'
+	);
+
+	// Cambiar el background con color
+	$options[] = array(
+		'name' => __( 'Color de Fondo', 'theme-textdomain' ),
+		'desc' => __( 'Puedes elegir el un color diferente para el fondo de la web.', 'elticotico' ),
+		'id' => 'example_colorpicker',
+		'std' => '',
+		'type' => 'color'
+	);
+
+	// Background en imagen
 	$options[]	=	array(
 	'name'	=>	__('Imagen de fondo', 'options_check'),
 	'desc'	=>	__('Selecciona una imagen grande para que se vea de fondo bastante grande', 'options_check'),

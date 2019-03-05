@@ -2,6 +2,12 @@
 // Eliminar cajas innecesarias del Dashboard
 require_once "includes/23._eliminar_cajas.php";
 
+// Configuración del slider
+require_once "includes/03._el_slider.php";
+
+// url relativas
+require_once "includes/14._url_relativas.php";
+
 // Cargar Panel de Opciones
 if ( !function_exists( 'optionsframework_init' ) )
 {

@@ -20,6 +20,7 @@ $logo_uploader = of_get_option('logo_uploader', '');
 	<meta name="description" content="<?php bloginfo('description');?>" >
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('stylesheet_directory');?>/images/favicon.png" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/style.css" />
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/css/index.css" />
 	<style type="text/css">
 		body
 		{
@@ -36,6 +37,7 @@ $logo_uploader = of_get_option('logo_uploader', '');
 </head>
 
 <body <?php body_class();?>>
+	<div class="wrapper">
 	<noscript>
 		<p>Necesitás si o si tener activado JavaScript en tu navedador</p>
 	</noscript>
@@ -43,14 +45,14 @@ $logo_uploader = of_get_option('logo_uploader', '');
 	<article>
 
 		<!--Aquí va el logo-->
-		<div class="borde">
+		<div class="borde logotipo">
 			<?php if( $logo_uploader ) { ?>
 
 			<img src="<?php echo $logo_uploader; ?>" alt="Tico Tico" />
 
 			<?php } else { ?>
 
-			<img src="<?php bloginfo('stylesheet_directory');?>/images/logo.png" alt="Tico Tico" />
+			<img src="<?php bloginfo('stylesheet_directory');?>/images/logotipo.png" alt="Tico Tico" />
 
 			<?php };?>
 		</div>

@@ -21,6 +21,7 @@
 				</p>
 			</div>
 		</footer>
+	</div><!-- fin del wrapper -->
 
 		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/js/jQueryCyclePlugin.js"></script>

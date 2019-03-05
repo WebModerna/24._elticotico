@@ -10,7 +10,7 @@
 get_header();?>
 
 	<!--Aquí va el SlideShow con las fotos y el video en vivo-->     
-	<section class="pics">
+	<section class="pics slides">
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<?php the_content();?>
