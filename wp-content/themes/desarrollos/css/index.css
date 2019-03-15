@@ -162,6 +162,12 @@ a:active {
   text-decoration: underline;
   text-shadow: 0px 0px 5px #000;
 }
+iframe {
+  border: none !important;
+  height: 480px;
+  width: 680px;
+  margin-top: -20px;
+}
 .contenedor {
   background: rgba(0,0,0,0.5);
   height: 100vh;
@@ -179,9 +185,9 @@ a:active {
 }
 .logotipo {
   margin: 0 auto;
-  top: 13px;
   position: absolute;
   text-align: center;
+  top: 13px;
   width: 100%;
   z-index: 99;
 }
@@ -197,25 +203,30 @@ a:active {
 }
 .slides,
 .slider__item {
-  background: rgba(0,0,0,0.97) url("images/bj3.jpg") no-repeat center center;
+  background: rgba(0,0,0,0.87) url("../images/bg2.jpg") center center no-repeat;
+  background-size: cover;
   border-radius: 8px;
   border: 8px solid #fff;
   box-sizing: border-box;
   display: block;
   margin: 5px auto 3em auto;
   max-width: 650px;
+  min-height: 460px;
   overflow: hidden;
   padding: 0;
   width: 100%;
   z-index: 98;
 }
-.slider__item figure img {
-  width: 100%;
-}
-.slider__item iframe {
-  height: 100%;
-  width: 100%;
-}
+/*.slider__item
+	figure
+		display block
+		img
+			display block
+			width 100%
+	iframe
+		height 540px !important
+		min-height 480px
+		width auto*/
 .wp-caption-text {
   background: rgba(255,255,255,0.75);
   padding: 16px;

@@ -23,6 +23,11 @@ a
 		color #CB583E
 		text-decoration underline
 		text-shadow 0px 0px 5px #000
+iframe
+	border none !important
+	height 480px
+	width 680px
+	margin-top -20px
 
 .contenedor
 	background rgba(0,0,0,0.5)
@@ -42,9 +47,9 @@ a
 // Logotipo
 .logotipo
 	margin 0 auto
-	top 13px
 	position absolute
 	text-align center
+	top 13px
 	width 100%
 	z-index 99
 
@@ -61,7 +66,8 @@ a
 // los slides
 .slides
 .slider__item
-	background rgba(0,0,0,0.97) url("images/bj3.jpg") no-repeat center center
+	background rgba(0,0,0,0.87) url("../images/bg2.jpg") center center no-repeat
+	background-size cover
 	border-radius 8px 
 	border 8px solid white
 	// box-shadow 0px 5px 25px 12px #000
@@ -69,19 +75,25 @@ a
 	display block
 	margin 5px auto 3em auto
 	max-width $ancho_maximo
-	// max-height 540px
+	min-height 460px
 	overflow hidden
 	padding 0
 	width 100%
 	z-index 98
+	
+	:first-child
+		background
 
-.slider__item
+/*.slider__item
 	figure
+		display block
 		img
+			display block
 			width 100%
 	iframe
-		height 100%
-		width 100%
+		height 540px !important
+		min-height 480px
+		width auto*/
 
 
 // las leyendas de las fotos
