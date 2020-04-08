@@ -1,0 +1,30 @@
+.encabezado
+    position relative
+    z-index 100
+
+    &__titular
+        background-color rgba(0.0.0.0.6)
+        margin 0
+        padding 0
+        position fixed
+        width 100%
+
+    &__enlace
+        color #fff
+        display inline-block
+        font-family 'Cinzel', serif
+        font-size 1.5rem
+        padding 0.5rem
+        text-align center
+        text-decoration none
+
+    &__logotipo
+        display inline-block
+        border-radius 50%
+        vertical-align middle
+        width 50px
+
+@media all and (min-width 720px)
+    .encabezado
+        &__enlace
+            font-size 2rem

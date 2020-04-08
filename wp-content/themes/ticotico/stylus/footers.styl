@@ -1,0 +1,26 @@
+/* =============== Pie de página ================== */
+.pie_pagina
+    background-color rgba(0,0,0,0.6)
+    bottom 0
+    font-size 0.8rem
+    overflow hidden
+    padding 0.5rem 0
+    position fixed
+    text-align center
+    width 100%
+    z-index 100
+
+    [class^="icon-"]
+        display inline-block
+        margin-top 0.5rem
+        padding 0.3rem
+        text-decoration none
+     
+    &__enlace
+        img
+            vertical-align middle
+            width 100px
+
+@media all and (min-width 720px)
+    .pie_pagina
+        font-size: 1.2rem

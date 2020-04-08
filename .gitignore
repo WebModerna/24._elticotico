@@ -11,21 +11,20 @@ wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
-# /.htaccess
-/licencia.txt
-licence.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
-
+.htaccess
+*.txt
+*licence.*
+*.html
+*.xml
+*.gz
+*.zip
 wp-*.php
 wp-admin
 wp-includes
 xml*.php
-wp-content/themes/desarrollos/style.php
-wp-content/themes/desarrollos/scripts.php
-# wp-content/themes/desarrollos/*.txt
-wp-content/themes/desarrollos/*.sql
-wp-content/themes/desarrollos/*.html
-wp-content/themes/desarrollos/single.php
-wp-content/themes/desarrollos/page.php
+desarrollos
+datos
+wordpress
+twentytwenty
+*sublime-*
+demo-files
