@@ -26,7 +26,7 @@
 	<meta property="og:description" content="<?php bloginfo('description');?>" />
 	<meta property="og:image" content="<?php bloginfo('stylesheet_directory');?>/img/screenshot.png" />
 	<meta property="og:image:width" content="800" />
-	<meta property="og:image:height" content="600" />
+	<meta property="og:image:height" content="499" />
 	<meta property="og:url" content="<?php echo get_site_url();?>" />
 	<meta property="og:site_name" content="<?php bloginfo('name');?>" />
     
