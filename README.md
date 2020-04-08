@@ -1,12 +1,10 @@
 <h1>SlidShow de imágenes con webcams en vivo</h1>
-<hr />
 <p>
     Esta plantilla de WordPress sirve para mezclar imágenes con texto y videos en vivos provenientes de webcams.
 </p>
 <p>
     Por una simple razón no existe en el mercado ningún plugin que haga esto. Por esa razón desarrollé esta simple plantilla, que mediante CSS3 y un poco de Javascript puro, se genera un slideshow que va pasando imágenes con texto y títulos; además de videos en vivo de las webcams.
 </p>
-<hr />
 <h2>Instrucciones de Uso</h2>
 <ol>
     <li>Una vez instalada la plantilla hay que ir creando cada una de los sliders. <strong>SON LAS ENTRADAS.</strong></li>
