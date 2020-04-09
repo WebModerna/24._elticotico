@@ -55,7 +55,7 @@ require_once "includes/configuracion_metabox.php";
 require_once "includes/meta-box/meta-box.php";
 
 // Url a relativas para testeo
-require_once "includes/url_relativas.php";
+// require_once "includes/url_relativas.php";
 
 // Minificación del html
 // require_once "includes/minificacion.php";

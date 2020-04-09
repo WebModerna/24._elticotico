@@ -1,4 +1,4 @@
-window.addEventListener("load", cargador);
+window.addEventListener("DOMContentLoaded", cargador);
 
 function cargador()
 {
